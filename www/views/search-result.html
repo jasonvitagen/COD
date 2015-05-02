@@ -1,0 +1,106 @@
+<nav class="navbar-top">
+  <form>
+    <div class="input-with-affix">
+      <a href="#/dashboard" class="button prefix">
+        <span class="icon-arrow-left-gray"></span>
+      </a>
+      <input type="text" value="VPN"/>
+      <span class="icon-remove-gray postfix"></span>
+    </div>
+  </form>
+  <div class="right">
+    <div class="button" data-navigation-drawer-toggle>
+      <span class="icon-filter"></span>
+    </div>
+  </div>
+</nav>
+
+<div class="search-settings">
+  <strong>Sort by:</strong> date created. <strong>Filters</strong>: type (web, blog), today, min rating 5
+</div>
+
+<div class="main search-result-page">
+  <article data-ng-repeat="question in question_list" class="row question-card">
+    <a href="#/discussion">
+      <div class="col-1-of-6">
+        <div data-ng-show="question.type === 'question'">
+          <span data-ng-show="question.answered" class="icon-question-checked"></span>
+          <span data-ng-hide="question.answered" class="icon-question-unchecked"></span>
+        </div>
+        <div data-ng-show="question.type === 'document'">
+          <span class="icon-document"></span>
+        </div>
+        <div data-ng-show="question.type === 'video'">
+          <span class="icon-video"></span>
+        </div>
+        <div class="star-rating" data-star-rating="{{question.rating}}" data-star-rating-readonly></div>
+      </div>
+      <div class="col-5-of-6">
+        <h1>{{question.title || 'Untitled'}}</h1>
+        <p>{{question.date}} | Last activity: {{question.last_activity}}</p>
+        <p><em>{{question.owner}}</em>. {{question.tags}}</p>
+      </div>
+      <p class="col-6-of-6 summary">{{question.summary}}</p>
+    </a>
+  </article>
+</div><!-- end of main -->
+
+<div class="search-filter" data-navigation-drawer>
+  <div class="main"><!-- main view -->
+    <div class="options">
+      <div class="sort-options row">
+        <h2>SORT BY</h2>
+        <div class="first-column">
+          <input id="sort0" type="radio" name="sort_by" checked>
+          <label for="sort0">Date Created</label> <br/>
+          <input id="sort1" type="radio" name="sort_by">
+          <label for="sort1">Author</label> <br/>
+          <input id="sort2" type="radio" name="sort_by">
+          <label for="sort2">Title</label> <br/>
+        </div>
+        <div class="second-column">
+          <input id="sort3" type="radio" name="sort_by">
+          <label for="sort3">Rating</label> <br/>
+          <input id="sort4" type="radio" name="sort_by">
+          <label for="sort4">Last Updated</label>
+        </div>
+      </div><!-- end of sort-options -->
+      <div class="filter-options row">
+        <h2>FILTER BY</h2>
+        <div class="first-column">
+          <p class="sub-options">TYPE</p>
+          <input id="web" type="checkbox" name="web" checked> 
+          <label for="web">Web</label><br/>
+          <input id="document" type="checkbox" name="document"> 
+          <label for="document">Document</label><br/>
+          <input id="blog" type="checkbox" name="blog" checked> 
+          <label for="blog">Blog</label><br/>
+          <input id="discussion" type="checkbox" name="discussion"> 
+          <label for="discussion">Discussion</label><br/>
+          <input id="knowledge-base" type="checkbox" name="Knowledge Base"> 
+          <label for="knowledge-base">Knowledge Base</label><br/>
+        </div>
+        <div class="second-column">
+          <p class="sub-options">DATE</p>
+          <input id="any" type="radio" name="date" checked> 
+          <label for="any">Any</label> <br/>
+          <input id="today" type="radio" name="date"> 
+          <label for="today">Today</label> <br/>
+          <input id="last-7" type="radio" name="date"> 
+          <label for="last-7">Last 7</label> <br/>
+          <input id="last-30" type="radio" name="date"> 
+          <label for="last-30">Last 30</label> <br/>
+          <input id="last-180" type="radio" name="date"> 
+          <label for="last-180">Last 180</label>
+        </div>
+        <div class="col-6-of-6">
+          <p class="sub-options">MINIMUM RATING</p>
+          <div class="star-rating" data-star-rating="2"></div>
+        </div>
+      </div><!-- end of filter-options -->
+    </div><!-- end of options -->
+    <div class="bottom-button">
+      <a href="#/search-result" data-ng-click="applyFilter()">APPLY</a>
+    </div>
+  </div><!-- end of main view -->
+</div><!-- end of search filter -->

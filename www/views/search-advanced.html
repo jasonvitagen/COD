@@ -1,0 +1,69 @@
+<nav class="navbar-top">
+  <form class="full-width">
+    <div class="input-with-affix">
+      <a href="#/dashboard" class="button prefix">
+        <span class="icon-arrow-left-gray"></span>
+      </a>
+      <input type="text" value="VPN"/>
+      <span class="icon-remove-gray postfix"></span>
+    </div>
+  </form>
+</nav>
+
+<div class="main search-advanced">
+  <div class="options">
+    <div class="sort-options row">
+      <h2>SORT BY</h2>
+      <div class="first-column">
+        <input id="sort0" type="radio" name="sort_by" checked>
+        <label for="sort0">Date Created</label> <br/>
+        <input id="sort1" type="radio" name="sort_by">
+        <label for="sort1">Author</label> <br/>
+        <input id="sort2" type="radio" name="sort_by">
+        <label for="sort2">Title</label> <br/>
+      </div>
+      <div class="second-column">
+        <input id="sort3" type="radio" name="sort_by">
+        <label for="sort3">Rating</label> <br/>
+        <input id="sort4" type="radio" name="sort_by">
+        <label for="sort4">Last Updated</label>
+      </div>
+    </div><!-- end of sort-options -->
+    <div class="filter-options row">
+      <h2>FILTER BY</h2>
+      <div class="first-column">
+        <p class="sub-options">TYPE</p>
+        <input id="web" type="checkbox" name="web" checked> 
+        <label for="web">Web</label><br/>
+        <input id="document" type="checkbox" name="document"> 
+        <label for="document">Document</label><br/>
+        <input id="blog" type="checkbox" name="blog" checked> 
+        <label for="blog">Blog</label><br/>
+        <input id="discussion" type="checkbox" name="discussion"> 
+        <label for="discussion">Discussion</label><br/>
+        <input id="knowledge-base" type="checkbox" name="Knowledge Base"> 
+        <label for="knowledge-base">Knowledge Base</label><br/>
+      </div>
+      <div class="second-column">
+        <p class="sub-options">DATE</p>
+        <input id="any" type="radio" name="date" checked> 
+        <label for="any">Any</label> <br/>
+        <input id="today" type="radio" name="date"> 
+        <label for="today">Today</label> <br/>
+        <input id="last-7" type="radio" name="date"> 
+        <label for="last-7">Last 7</label> <br/>
+        <input id="last-30" type="radio" name="date"> 
+        <label for="last-30">Last 30</label> <br/>
+        <input id="last-180" type="radio" name="date"> 
+        <label for="last-180">Last 180</label>
+      </div>
+      <div class="col-6-of-6">
+        <p class="sub-options">MINIMUM RATING</p>
+        <div class="star-rating" data-star-rating="2"></div>
+      </div>
+    </div><!-- end of filter-options -->
+  </div><!-- end of options -->
+  <div class="bottom-button">
+    <a href="#/search-result">SEARCH</a>
+  </div>
+</div><!-- end of main -->

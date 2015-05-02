@@ -1,0 +1,109 @@
+form input[type="text"] {
+  width: 100%;
+  border: 0;
+  font-size: 14px;
+  padding: 15px;
+}
+
+form .input-with-affix {
+  position: relative;
+  padding-right: 44px;
+}
+  .navbar-top form .input-with-affix input {
+    width: 79%;
+    margin-left: 9px;
+
+    padding-left: 35px;
+  }
+  form .input-with-affix .prefix, form .input-with-affix .postfix {
+    position: absolute;
+  }
+  form .input-with-affix span.prefix {
+    left: 23px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  form .input-with-affix span.postfix {
+    right: 50px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+input[type="text"].tm-tag {
+  width: 60%;
+
+  background: white;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  color: #555555;
+}
+
+.tags {
+  border-top: 2px solid #0096d6;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+
+  min-height: 38px;
+  line-height: 38px;
+
+  padding: 0 15px;
+}
+
+.tm-tag {
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+
+  border-radius: 12px;
+
+  padding: 0 12px;
+
+  color: white;
+  background: #0096d6;
+  border: 0;
+}
+.tm-tag .tm-tag-remove {
+  color: white;
+  opacity: 1;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+}
+
+.file-attachment-list {
+  padding: 0 15px;
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+}
+.MultiFile-label {
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+  padding: 5px;
+  display: inline-block;
+  height: 30px;
+  margin-right: 5px;
+}
+.MultiFile-title span {
+  margin-top: 5px;
+  display: inline-block;
+}
+.MultiFile-title span[class*='icon-'] {
+  margin-top: 0;
+}
+.MultiFile-remove {
+  display: none;
+}
+.MultiFile-applied {
+  position: absolute;
+  top: 15px;
+  width: 44px;
+  left: 0;
+  opacity: 0;
+}

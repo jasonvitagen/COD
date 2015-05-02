@@ -1,0 +1,262 @@
+<!-- top navigation bar -->
+<nav class="navbar-top">
+  <div class="left">
+    <div class="button" data-navigation-drawer-toggle>
+      <span class="icon-humberger"></span>
+    </div>
+  </div>
+  <div class="title">
+    <span class="icon-cisco-logo"></span>
+  </div>
+  <div class="right">
+    <a href="#/search" class="button">
+      <span class="icon-search"></span>
+    </a>
+  </div>
+</nav>
+
+<div class="main dashboard-page"><!-- main page section -->
+  <div class="accordion" data-accordion><!-- accordion -->
+    <section><!-- My Question -->
+      <div data-accordion-header class="accordion-header row">
+        <div class="col-1-of-6 text-center">
+          <span class="icon-question"></span>
+        </div>
+        <div class="col-4-of-6">
+          <h1>My Questions</h1>
+        </div>
+        <div class="col-1-of-6 text-center">
+          <span class="icon-caret-down"></span>
+          <span class="icon-caret-up"></span>
+        </div>
+      </div>
+      <div data-accordion-content><!-- accordion content -->
+        <article data-ng-repeat="question in my_questions" class="question-card row">
+          <a href="#/discussion">
+            <div class="col-1-of-6 text-center">
+              <span data-ng-show="question.answered" class="icon-question-checked"></span>
+              <span data-ng-hide="question.answered" class="icon-question-unchecked"></span>
+              <div class="star-rating" data-star-rating="{{question.rating}}" data-star-rating-readonly></div>
+            </div>
+            <div class="col-5-of-6">
+              <h2>{{question.title || 'Untitled'}}</h2>
+              <p class="single">{{question.date}}. {{question.tags}}</p>
+            </div>
+          </a>
+        </article>
+        <div class="actions row">
+          <div class="col-4-of-6 text-right">
+            <a href="#/create-question" class="button">ASK A QUESTION</a>
+          </div>
+          <div class="col-2-of-6 text-center">
+            <a href="#" class="button">VIEW ALL</a>
+          </div>
+        </div>
+      </div><!-- end of accordion content -->
+    </section><!-- end of My Question -->
+    <section><!-- My Interest -->
+      <div data-accordion-header class="accordion-header row">
+        <div class="col-1-of-6 text-center">
+          <span class="icon-heart"></span>
+        </div>
+        <div class="col-3-of-6">
+          <h1>My Interests</h1>
+        </div>
+        <div class="col-1-of-6 text-center">
+          <span class="icon-badge badge" data-badge-value="1"></span>
+        </div>
+        <div class="col-1-of-6 text-center">
+          <span class="icon-caret-down"></span>
+          <span class="icon-caret-up"></span>
+        </div>
+      </div>
+      <div data-accordion-content><!-- accordion content -->
+        <article data-ng-repeat="question in my_interests" class="question-card row">
+          <a href="#/discussion">
+            <div class="col-1-of-6">
+              <span data-ng-show="question.answered" class="icon-question-checked"></span>
+              <span data-ng-hide="question.answered" class="icon-question-unchecked"></span>
+              <span data-ng-hide="question.read" class="icon-unread unread"></span>
+              <div class="star-rating" data-star-rating="{{question.rating}}" data-star-rating-readonly></div>
+            </div>
+            <div class="col-5-of-6">
+              <h2>{{question.title || 'Untitled'}}</h2>
+              <p>{{question.date}} | Last activity: {{question.last_activity}}</p>
+              <p><em>{{question.owner}}</em>. {{question.tags}}</p>
+            </div>
+          </a>
+        </article>
+        <div class="actions row">
+          <div class="col-2-of-6 col-offset-4-of-6 text-center">
+            <a href="#" class="button">VIEW ALL</a>
+          </div>
+        </div>
+      </div><!-- end of accordion content -->
+    </section><!-- end of My Interest -->
+    <section><!-- Recent Activity -->
+      <div data-accordion-header class="accordion-header row">
+        <div class="col-1-of-6 text-center">
+          <span class="icon-clock"></span>
+        </div>
+        <div class="col-3-of-6">
+          <h1>Recent Activity</h1>
+        </div>
+        <div class="col-1-of-6 text-center">
+          <span class="icon-badge badge" data-badge-value="2"></span>
+        </div>
+        <div class="col-1-of-6 text-center">
+          <span class="icon-caret-down"></span>
+          <span class="icon-caret-up"></span>
+        </div>
+      </div>
+      <div data-accordion-content><!-- accordion content -->
+        <article data-ng-repeat="question in recent_activity" class="row question-card question-card-no-image">
+          <span data-ng-hide="question.read" class="icon-unread unread"></span>
+          <h2><strong>{{question.owner}}</strong> {{question.activity}} <em>{{question.title || 'Untitled'}}</em></h2>
+          <p>{{question.date}}</p>
+        </article>
+        <div class="actions row">
+          <div class="col-2-of-6 col-offset-4-of-6 text-center">
+            <a href="#" class="button">VIEW ALL</a>
+          </div>
+        </div>
+      </div><!-- end of accordion content -->
+    </section><!-- end of My Recent Activity -->
+    <section><!-- Announcements -->
+      <div data-accordion-header class="accordion-header row">
+        <div class="col-1-of-6 text-center">
+          <span class="icon-announcement"></span>
+        </div>
+        <div class="col-3-of-6">
+          <h1>Announcements</h1>
+        </div>
+        <div class="col-1-of-6 text-center">
+          <span class="icon-badge badge" data-badge-value="1"></span>
+        </div> 
+        <div class="col-1-of-6 text-center">
+          <span class="icon-caret-down"></span>
+          <span class="icon-caret-up"></span>
+        </div>
+      </div>
+      <div data-accordion-content><!-- accordion content -->
+        <article data-ng-repeat="question in announcements" class="question-card row question-card-no-image">
+          <span data-ng-hide="question.read" class="icon-unread unread"></span>
+          <h2>{{question.title || 'Untitled'}}</h2>
+          <p><em>{{question.owner}}</em>. {{question.date}}</p>
+          <p>{{question.tags}}</p>
+        </article>
+        <div class="actions row">
+          <div class="col-2-of-6 col-offset-4-of-6 text-center">
+            <a href="#" class="button">VIEW ALL</a>
+          </div>
+        </div>
+      </div><!-- end of accordion content -->
+    </section><!-- end of Announcements -->
+  </div><!-- end of accordion -->
+</div><!-- end of main page section -->
+
+<div class="navigation-left" data-navigation-drawer><!-- navigation drawer -->
+  <nav class="navbar-top">
+    <div class="left">
+      <div class="button" data-navigation-drawer-toggle>
+        <span class="icon-arrow-left"></span>
+      </div>
+    </div>
+    <div class="title title-left">
+      Cisco on Demand
+    </div>
+    <div class="right">
+      <a href="#/search" class="button">
+        <span class="icon-search"></span>
+      </a>
+    </div>
+  </nav><!-- drawer navigation list -->
+  <div class="main">
+    <div class="row profile-info">
+      <div class="col-2-of-6 text-center">
+        <img class="profile-pic" src="img/profile-pic/user.png" alt="profile-pic">
+      </div>
+      <div class="col-4-of-6">
+        <p class="fullname">Ibnu Sina Wardy</p>
+        <p class="username">gitsindonesia</p>
+        <a href="#" class="button">Log out</a>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li class="row">
+          <a href="#/dashboard" class="active">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-home"></span>
+            </div>
+            Home
+          </a>
+        </li>
+        <li class="row">
+          <a href="#">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-questions-gray"></span>
+            </div>
+            Questions
+          </a>
+        </li>
+        <li class="row">
+          <a href="#">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-blogs-gray"></span>
+            </div>
+            Blogs
+          </a>
+        </li>
+        <li class="row">
+          <a href="#">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-documents-gray"></span>
+            </div>
+            Documents
+          </a>
+        </li>
+        <li class="row">
+          <a href="#">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-announcements-gray"></span>
+            </div>
+            Announcements
+          </a>
+        </li>
+        <li class="row">
+          <a href="#">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-video-gray"></span>
+            </div>
+            Video
+          </a>
+        </li>
+        <li class="row">
+          <a href="#">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-chat-gray"></span>
+            </div>
+            Chat
+          </a>
+        </li>
+        <li class="row">
+          <a href="#">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-help-gray"></span>
+            </div>
+            Help
+          </a>
+        </li>
+        <li class="row">
+          <a href="#">
+            <div class="col-2-of-6 text-center">
+              <span class="icon-settings-gray"></span>
+            </div>
+            Settings
+          </a>
+        </li>
+      </ul>
+    </nav><!-- end of drawer navigation list -->
+  </div>
+</div><!-- end of navigation drawer -->

@@ -1,0 +1,38 @@
+<nav class="navbar-top">
+  <div class="left">
+    <a href="#/dashboard" class="button"><span class="icon-remove"></span></a>
+  </div>
+  <div class="title title-left">
+    Create Question
+  </div>
+  <div class="right">
+    <div class="button">
+      <span class="icon-attachment"></span>
+      <input id="file-attachment" type="file" data-multi-attachment/>
+    </div>
+    <div class="button">
+      <span class="icon-send" data-ng-click="submit()"></span>
+    </div>
+  </div>
+</nav>
+
+<div class="main">
+  <form>
+    <input type="text" placeholder="Question title"/>
+    <div class="tags">
+      <input class="tm-tag" type="text" placeholder="Add tags, separate by comma" data-tagsinput/>
+    </div>
+    <div id="editor" data-rte-editor data-rte-editor-toolbar="#rte-toolbar">
+      Ask something ...
+    </div>
+    <div class="file-attachment-list"></div>
+  </form>
+</div>
+
+<div id="rte-toolbar">
+  <button class="ql-bold"><span class="icon-bold"></span></button>
+  <button class="ql-italic"><span class="icon-italic"></span></button>
+  <button class="ql-underline"><span class="icon-underline"></span></button>
+  <button class="ql-list"><span class="icon-list"></span></button>
+  <button class="ql-bullet"><span class="icon-bullet"></span></button>
+</div>

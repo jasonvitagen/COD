@@ -1,0 +1,146 @@
+<nav class="navbar-top no-shadow">
+  <div class="left">
+    <a href="#/dashboard" class="button">
+      <span class="icon-arrow-left"></span>
+    </a>
+  </div>
+  <div class="title title-left">
+    Discussion
+  </div>
+</nav>
+
+<div class="main discussion-page">
+  <section class="question"><!-- question -->
+    <div class="question-title" data-hide-on-scroll>
+      <h1>MPLS failover with VPN?</h1>
+      <p>Feb 25, 2010 | Latest activity: May 28, 2012 <span class="status">STATUS: OPEN</span></p>
+      <p>Tags: VPN, Networking</p>
+      <div class="type"><span class="icon-question-checked"></span></div>
+    </div>
+    <div class="thread-post"><!-- thread post -->
+      <div class="row user-info">
+        <div class="col-1-of-6 text-center">
+          <img src="http://placehold.it/29x29" alt="profile-pic" data-ng-src="{{discussion.profile_pic}}" class="profile-pic">
+        </div>
+        <div class="col-3-of-6">
+          <p>{{discussion.username}}</p>
+          <p class="date"><span class="icon-clock-small"></span> {{discussion.date}}</p>
+        </div>
+        <div class="col-2-of-6 text-right">
+          <p>{{discussion.num_question}} <span class="star-rating star-rating-medium" data-star-rating="{{discussion.rating}}" data-star-rating-readonly></span></p>
+        </div>
+      </div>
+      <p class="content">{{discussion.content}}</p>
+    </div><!-- end of thread post -->
+    <div class="actions">
+      <div class="button" data-modal="#popup-reply"><span class="icon-reply"></span>REPLY</div>
+      <a href="javascript:;" class="button"><span class="icon-rate"></span>RATE</a>
+    </div>
+  </section><!-- end of question -->
+  <div class="replies-list"><!-- replies -->
+    <div data-collapse-toggle="#replies" class="collapse-toggler">
+      <div class="show-on-collapse">
+        <span class="icon-chevron-up"></span>
+        Hide all {{discussion.replies.length}} thread replies
+      </div>
+      <div class="hide-on-collapse">
+        <span class="icon-chevron-down"></span>
+        Show all {{discussion.replies.length}} thread replies
+      </div>
+    </div>
+    <div id="replies">
+      <div class="thread-post" data-ng-repeat="reply in discussion.replies"><!-- thread post -->
+        <div class="row user-info">
+          <div class="col-1-of-6 text-center">
+            <img src="http://placehold.it/44x44" alt="profile-pic" data-ng-src="{{reply.profile_pic}}" class="profile-pic">
+          </div>
+          <div class="col-3-of-6">
+            <p>{{reply.username}}</p>
+            <p class="date"><span class="icon-clock-small"></span> {{reply.date}}</p>
+          </div>
+          <div class="col-2-of-6 text-right">
+            <p>{{reply.num_question}} <span class="star-rating star-rating-medium" data-star-rating="{{reply.rating}}" data-star-rating-readonly></span></p>
+            <p data-ng-show="reply.correct_vote > 0"><span class="icon-checkmark"></span> {{reply.correct_vote}}</p>
+          </div>
+        </div>
+        <p class="content" data-modal="#popup-quick-button" data-modal-tooltip>{{reply.content}}</p>
+        <div class="answer" data-ng-show="reply.answers.length > 0">
+          <div data-collapse-toggle="{{'#answer' + $index}}" class="collapse-toggler">
+            <div class="show-on-collapse">
+              <span class="icon-chevron-up"></span>
+              Hide all {{discussion.replies.length}} answers
+            </div>
+            <div class="hide-on-collapse">
+              <span class="icon-chevron-down"></span>
+              Show all {{discussion.replies.length}} answers
+            </div>
+          </div>
+          <div id="{{'answer' + $index}}">
+            <div data-ng-repeat="answer in reply.answers" data-modal="#popup-quick-button" class="answer-item">
+              <p>
+                {{answer.content}} -
+                <em>{{answer.username}}</em> <span class="date">{{answer.date}} at {{answer.time}}</span>
+              </p>
+            </div>
+          </div>
+        </div><!-- end of answer -->
+      </div><!-- end of thread post -->
+    </div>
+  </div><!-- end of replies -->
+
+  <div class="bottom-button row">
+    <div class="col-3-of-6 text-center">
+      <div class="infograph">
+        <span class="icon-people"></span>
+        <span class="value">72</span>
+      </div>
+      I have this problem
+    </div>
+    <div class="col-3-of-6 text-center">
+      <div class="infograph">
+        <span class="icon-heart-white"></span>
+        <span class="value">104</span>
+      </div>
+      Follow this
+    </div>
+  </div>
+</div><!-- end of main -->
+
+<div id="popup-quick-button" class="popup-quick-button">
+  <div class="left">
+    <div class="button">
+      <span class="icon-reply-white"></span>
+    </div>
+    <div class="button">
+      <span class="icon-rate-white"></span>
+    </div>
+  </div>
+  <div class="right">
+    <div class="button">
+      <span class="icon-checkmark-white"></span>CORRECT!
+    </div>
+  </div>
+</div>
+
+<div id="popup-reply" class="popup-reply">
+  <div id="editor" data-rte-editor data-rte-editor-toolbar="#rte-toolbar">Reply ...</div>
+  <div id="rte-toolbar">
+    <button class="ql-bold"><span class="icon-bold"></span></button>
+    <button class="ql-italic"><span class="icon-italic"></span></button>
+    <button class="ql-underline"><span class="icon-underline"></span></button>
+    <button class="ql-list"><span class="icon-list"></span></button>
+    <button class="ql-bullet"><span class="icon-bullet"></span></button>
+  </div>
+  <p class="title">Reply to gitsindonesia</p>
+  <p class="original-text">
+    Donect sodales nulla vel ante ultricies, a consectetur augues pharetra.
+    Fusce eros lacus, laoreet eget arcu vel, lobortis
+    tincidunt velit.
+  </p>
+  <div class="actions text-right">
+    <div class="button" data-modal-close>CANCEL</div>
+    <a class="button primary" data-ng-click="submitReply()">SUBMIT</a>
+  </div>
+</div>
+
+<div class="overlay"></div>

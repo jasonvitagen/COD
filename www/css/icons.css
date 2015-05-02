@@ -1,0 +1,471 @@
+﻿/* glue: 0.9.4 hash: 3a34b1c73a */
+        .icon-cisco-logo,
+.icon-question-unchecked,
+.icon-question-checked,
+.icon-video,
+.icon-document,
+.icon-people,
+.icon-question,
+.icon-clock,
+.icon-heart,
+.icon-filter,
+.icon-documents-gray,
+.icon-attachment,
+.icon-announcement,
+.icon-search,
+.icon-rate-white,
+.icon-home,
+.icon-rate,
+.icon-video-gray,
+.icon-send,
+.icon-questions-gray,
+.icon-heart-white,
+.icon-chat-gray,
+.icon-underline,
+.icon-help-gray,
+.icon-badge,
+.icon-announcements-gray,
+.icon-settings-gray,
+.icon-reply,
+.icon-reply-white,
+.icon-list,
+.icon-checkmark-white,
+.icon-humberger,
+.icon-bullet,
+.icon-caret-up,
+.icon-caret-down,
+.icon-italic,
+.icon-bold,
+.icon-blogs-gray,
+.icon-remove,
+.icon-arrow-left,
+.icon-arrow-left-gray,
+.icon-unread,
+.icon-history,
+.icon-clock-small,
+.icon-chevron-up,
+.icon-chevron-down,
+.icon-remove-gray,
+.icon-file,
+.icon-checkmark,
+.icon-arrow-diagonal {
+            background-image: url('../img/icons.png');
+            background-repeat: no-repeat;
+        }
+        
+        .icon-cisco-logo {
+            background-position: 0 0;
+            width: 51px;
+            height: 27px;
+        }
+        
+        .icon-question-unchecked {
+            background-position: 0 -27px;
+            width: 37px;
+            height: 38px;
+        }
+        
+        .icon-question-checked {
+            background-position: -51px 0;
+            width: 37px;
+            height: 38px;
+        }
+        
+        .icon-video {
+            background-position: -88px 0;
+            width: 37px;
+            height: 37px;
+        }
+        
+        .icon-document {
+            background-position: 0 -65px;
+            width: 37px;
+            height: 37px;
+        }
+        
+        .icon-people {
+            background-position: -88px -37px;
+            width: 28px;
+            height: 18px;
+        }
+        
+        .icon-question {
+            background-position: -51px -38px;
+            width: 23px;
+            height: 26px;
+        }
+        
+        .icon-clock {
+            background-position: -37px -65px;
+            width: 26px;
+            height: 23px;
+        }
+        
+        .icon-heart {
+            background-position: -63px -65px;
+            width: 25px;
+            height: 23px;
+        }
+        
+        .icon-filter {
+            background-position: -88px -65px;
+            width: 23px;
+            height: 15px;
+        }
+        
+        .icon-documents-gray {
+            background-position: -88px -55px;
+            width: 23px;
+            height: 10px;
+        }
+        
+        .icon-attachment {
+            background-position: -37px -88px;
+            width: 23px;
+            height: 10px;
+        }
+        
+        .icon-announcement {
+            background-position: 0 -102px;
+            width: 22px;
+            height: 23px;
+        }
+        
+        .icon-search {
+            background-position: -22px -102px;
+            width: 22px;
+            height: 22px;
+        }
+        
+        .icon-rate-white {
+            background-position: -44px -102px;
+            width: 22px;
+            height: 21px;
+        }
+        
+        .icon-home {
+            background-position: -66px -102px;
+            width: 22px;
+            height: 19px;
+        }
+        
+        .icon-rate {
+            background-position: -125px 0;
+            width: 21px;
+            height: 20px;
+        }
+        
+        .icon-video-gray {
+            background-position: -125px -20px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .icon-send {
+            background-position: -125px -40px;
+            width: 20px;
+            height: 17px;
+        }
+        
+        .icon-questions-gray {
+            background-position: -125px -57px;
+            width: 20px;
+            height: 19px;
+        }
+        
+        .icon-heart-white {
+            background-position: -125px -76px;
+            width: 20px;
+            height: 18px;
+        }
+        
+        .icon-chat-gray {
+            background-position: -125px -94px;
+            width: 20px;
+            height: 19px;
+        }
+        
+        .icon-underline {
+            background-position: -74px -38px;
+            width: 14px;
+            height: 19px;
+        }
+        
+        .icon-help-gray {
+            background-position: -88px -102px;
+            width: 19px;
+            height: 19px;
+        }
+        
+        .icon-badge {
+            background-position: 0 -125px;
+            width: 19px;
+            height: 19px;
+        }
+        
+        .icon-announcements-gray {
+            background-position: -19px -125px;
+            width: 19px;
+            height: 19px;
+        }
+        
+        .icon-settings-gray {
+            background-position: -107px -102px;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .icon-reply {
+            background-position: -38px -125px;
+            width: 18px;
+            height: 15px;
+        }
+        
+        .icon-reply-white {
+            background-position: -56px -125px;
+            width: 18px;
+            height: 15px;
+        }
+        
+        .icon-list {
+            background-position: -146px 0;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .icon-checkmark-white {
+            background-position: -146px -18px;
+            width: 18px;
+            height: 14px;
+        }
+        
+        .icon-humberger {
+            background-position: -146px -32px;
+            width: 17px;
+            height: 11px;
+        }
+        
+        .icon-bullet {
+            background-position: -146px -43px;
+            width: 17px;
+            height: 15px;
+        }
+        
+        .icon-caret-up {
+            background-position: -146px -58px;
+            width: 16px;
+            height: 8px;
+        }
+        
+        .icon-caret-down {
+            background-position: -146px -66px;
+            width: 16px;
+            height: 8px;
+        }
+        
+        .icon-italic {
+            background-position: -146px -74px;
+            width: 15px;
+            height: 15px;
+        }
+        
+        .icon-bold {
+            background-position: -146px -89px;
+            width: 12px;
+            height: 15px;
+        }
+        
+        .icon-blogs-gray {
+            background-position: -146px -104px;
+            width: 15px;
+            height: 14px;
+        }
+        
+        .icon-remove {
+            background-position: -146px -118px;
+            width: 14px;
+            height: 14px;
+        }
+        
+        .icon-arrow-left {
+            background-position: -37px -27px;
+            width: 13px;
+            height: 13px;
+        }
+        
+        .icon-arrow-left-gray {
+            background-position: -37px -40px;
+            width: 13px;
+            height: 13px;
+        }
+        
+        .icon-unread {
+            background-position: -146px -132px;
+            width: 12px;
+            height: 11px;
+        }
+        
+        .icon-history {
+            background-position: -125px -113px;
+            width: 12px;
+            height: 12px;
+        }
+        
+        .icon-clock-small {
+            background-position: -37px -53px;
+            width: 12px;
+            height: 12px;
+        }
+        
+        .icon-chevron-up {
+            background-position: -111px -55px;
+            width: 12px;
+            height: 7px;
+        }
+        
+        .icon-chevron-down {
+            background-position: -74px -57px;
+            width: 12px;
+            height: 7px;
+        }
+        
+        .icon-remove-gray {
+            background-position: -111px -65px;
+            width: 11px;
+            height: 10px;
+        }
+        
+        .icon-file {
+            background-position: -74px -125px;
+            width: 11px;
+            height: 11px;
+        }
+        
+        .icon-checkmark {
+            background-position: -60px -88px;
+            width: 11px;
+            height: 9px;
+        }
+        
+        .icon-arrow-diagonal {
+            background-position: -85px -125px;
+            width: 10px;
+            height: 10px;
+        }
+        
+        @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
+            .icon-cisco-logo,
+    .icon-question-unchecked,
+    .icon-question-checked,
+    .icon-video,
+    .icon-document,
+    .icon-people,
+    .icon-question,
+    .icon-clock,
+    .icon-heart,
+    .icon-filter,
+    .icon-documents-gray,
+    .icon-attachment,
+    .icon-announcement,
+    .icon-search,
+    .icon-rate-white,
+    .icon-home,
+    .icon-rate,
+    .icon-video-gray,
+    .icon-send,
+    .icon-questions-gray,
+    .icon-heart-white,
+    .icon-chat-gray,
+    .icon-underline,
+    .icon-help-gray,
+    .icon-badge,
+    .icon-announcements-gray,
+    .icon-settings-gray,
+    .icon-reply,
+    .icon-reply-white,
+    .icon-list,
+    .icon-checkmark-white,
+    .icon-humberger,
+    .icon-bullet,
+    .icon-caret-up,
+    .icon-caret-down,
+    .icon-italic,
+    .icon-bold,
+    .icon-blogs-gray,
+    .icon-remove,
+    .icon-arrow-left,
+    .icon-arrow-left-gray,
+    .icon-unread,
+    .icon-history,
+    .icon-clock-small,
+    .icon-chevron-up,
+    .icon-chevron-down,
+    .icon-remove-gray,
+    .icon-file,
+    .icon-checkmark,
+    .icon-arrow-diagonal {
+                background-image: url('../img/icons.png');
+                -webkit-background-size: 164px 144px;
+                -moz-background-size: 164px 144px;
+                background-size: 164px 144px;
+            }
+        }
+        
+        @media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0), screen and (-o-min-device-pixel-ratio: 200/100), screen and (min-device-pixel-ratio: 2.0), screen and (min-resolution: 2.0dppx) {
+            .icon-cisco-logo,
+    .icon-question-unchecked,
+    .icon-question-checked,
+    .icon-video,
+    .icon-document,
+    .icon-people,
+    .icon-question,
+    .icon-clock,
+    .icon-heart,
+    .icon-filter,
+    .icon-documents-gray,
+    .icon-attachment,
+    .icon-announcement,
+    .icon-search,
+    .icon-rate-white,
+    .icon-home,
+    .icon-rate,
+    .icon-video-gray,
+    .icon-send,
+    .icon-questions-gray,
+    .icon-heart-white,
+    .icon-chat-gray,
+    .icon-underline,
+    .icon-help-gray,
+    .icon-badge,
+    .icon-announcements-gray,
+    .icon-settings-gray,
+    .icon-reply,
+    .icon-reply-white,
+    .icon-list,
+    .icon-checkmark-white,
+    .icon-humberger,
+    .icon-bullet,
+    .icon-caret-up,
+    .icon-caret-down,
+    .icon-italic,
+    .icon-bold,
+    .icon-blogs-gray,
+    .icon-remove,
+    .icon-arrow-left,
+    .icon-arrow-left-gray,
+    .icon-unread,
+    .icon-history,
+    .icon-clock-small,
+    .icon-chevron-up,
+    .icon-chevron-down,
+    .icon-remove-gray,
+    .icon-file,
+    .icon-checkmark,
+    .icon-arrow-diagonal {
+                background-image: url('../img/icons@2x.png');
+                -webkit-background-size: 164px 144px;
+                -moz-background-size: 164px 144px;
+                background-size: 164px 144px;
+            }
+        }
+        
